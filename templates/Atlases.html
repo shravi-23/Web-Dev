@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerial Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">≡</a>
+                <ul class="dropdown">
+                    <li><a href="{{ url_for('login') }}">Admin Dashboard</a></li>
+                    <li><a href="{{ url_for('register') }}">Register</a></li>
+                </ul>
+            </li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li>
+                <a href="#">About</a>
+                <ul class="dropdown">
+                    <li><a href="{{ url_for('render_template_route', template='vision-mission-objective') }}">Vision-Mission-Objective</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='citizen-charter') }}">Citizen Charter</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Organizational-structure') }}">Organizational Structure</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Space-commission') }}">Space Commission</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Autonomousbodies') }}">Autonomous Bodies</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Missions</a>
+                <ul class="dropdown">
+                    <li><a href="{{ url_for('render_template_route', template='Mangalyaan') }}">Mangalyaan Mission</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Chandrayaan') }}">Chandrayaan Mission</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Gaganyaan') }}">Gaganyaan Mission</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Pslv') }}">PSLV Mission</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Nisar') }}">NISAR Mission</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Resources</a>
+                <ul class="dropdown">
+                    <li><a href="{{ url_for('render_template_route', template='Atlases') }}">Atlases-River Basins</a></li>
+                    <li><a href="https://bhuvan.nrsc.gov.in/">Bhuvan</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Database') }}">Database for Emergency</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Landslide') }}">Landslide Atlas</a></li>
+                    <li><a href="https://www.mosdac.gov.in/live/index_one.php?url_name=india">Meteorology and Oceanographic Data</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                    <li><a href="{{ url_for('render_template_route', template='Launch-Services') }}">Launch Services</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='System-Services') }}">System Services</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Ground-system-support') }}">Ground System Support</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Satellite-Navigation') }}">Satellite Navigation</a></li>
+                    <li><a href="{{ url_for('render_template_route', template='Aerial-Services') }}">Aerial Services</a></li>
+                </ul>
+            </li>
+            <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            <li><a href="{{ url_for('render_template_route', template='valid') }}">Feedback Form</a></li>
+            <li><a href="{{ url_for('render_template_route', template='ongoing mission') }}">Ongoing Mission</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Your main content goes here -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Indian Space Research Organization. All rights reserved.</p>
+    </footer>
+</body>
+</html>
